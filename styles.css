@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Noto Sans Sinhala', sans-serif;
+    font-family: 'TharuDigitalSiyapatha';
     overflow-x: hidden;
     overflow-y: hidden;
   }
@@ -161,7 +161,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     z-index: 20;
-    font-family: "Noto Sans Sinhala", sans-serif;
+    font-family: "tharu_digital_malee";
   
     animation: fadeInText 2s ease-out;
   }
