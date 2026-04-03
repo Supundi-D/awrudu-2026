@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc70, #ff6f61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    overflow: hidden;
+}
+.awrudu-girl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35vh;
+    max-height: 300px;
+  } 
+  
+  .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .sweets {
+    position: fixed;
+    bottom: -60px;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatUp linear forwards;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);   /* no X movement */
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-110vh); /* straight up */
+      opacity: 0;
+    }
+  }
+  
+  .card {
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    animation: slideDown 1.5s ease-out;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffcc70, #ff6f61);
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    top: 40%;
+  }
+  
+  .erabadu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vh;   /* updated size */
+    width: auto;
+    z-index: 1;
+  }
+  
+  
+  .koha {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    height: 10vh;
+    animation: bounce 2s infinite;
+    z-index: 2;
+  }
+  
+
+  .petals {
+    position: fixed;
+    width: 30px;
+    pointer-events: none;
+    z-index: 0;
+    animation: fall 4s linear forwards;
+  }
+  
+ 
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(-50%); }
+    50% { transform: translateY(-60%); }
+  }
