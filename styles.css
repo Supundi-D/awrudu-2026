@@ -107,7 +107,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 40vh;   
+    height: 30vh;   
     width: auto;
     z-index: 1;
   }
@@ -115,7 +115,7 @@ body {
   
   .koha {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 0;
     height: 10vh;
     animation: bounce 2s infinite;
