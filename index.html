@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සුභ අලුත් අවුරුද්දක් වේවා</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffcc70, #ff6f61);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Noto Sans Sinhala', sans-serif;
+            overflow: hidden;
+        }
+
+       
+        .card {
+            text-align: center;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        
+        .title {
+            font-size: 42px;
+            font-weight: bold;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        
+        .subtitle {
+            margin-top: 15px;
+            font-size: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            top: 10%;
+            left: 20%;
+        }
+
+        .circle:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            background: #ffd700;
+            bottom: 15%;
+            right: 25%;
+        }
+
+        .circle:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            top: 70%;
+            left: 10%;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="card">
+        <div class="title">සුභ අලුත් අවුරුද්දක් වේවා!</div>
+        <div class="subtitle">ඔබට සහ ඔබේ පවුලට සතුට, සෞභාග්‍ය සහ සාර්ථකත්වය පිරුණු නව වසරක් වේවා!</div>
+    </div>
+
+</body>
+
+</html>
