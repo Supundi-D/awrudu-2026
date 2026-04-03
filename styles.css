@@ -1,13 +1,20 @@
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh; 
     background: linear-gradient(135deg, #ffcc70, #ff6f61);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Noto Sans Sinhala', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  html, body {
+    height: 100%;
     overflow: hidden;
-}
+  }
 .awrudu-girl {
     position: absolute;
     bottom: 0;
@@ -36,56 +43,72 @@ body {
   
   @keyframes floatUp {
     0% {
-      transform: translateY(0);   /* no X movement */
+      transform: translateY(0);  
       opacity: 0;
     }
     20% {
       opacity: 1;
     }
     100% {
-      transform: translateY(-110vh); /* straight up */
+      transform: translateY(-110vh); 
       opacity: 0;
     }
   }
   
   .card {
     text-align: center;
-    color: #fff;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.title {
-    font-size: 42px;
-    font-weight: bold;
-    animation: slideDown 1.5s ease-out;
-}
-
-.subtitle {
-    margin-top: 15px;
-    font-size: 20px;
-    animation: fadeIn 3s ease-in-out;
-}
-body {
-    margin: 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ffcc70, #ff6f61);
-    height: 100vh;
-    font-family: sans-serif;
-  }
-  
-  .content {
+    color: white;
     position: relative;
     z-index: 10;
-    text-align: center;
-    color: white;
-    top: 40%;
+  }
+  
+  .title {
+    font-size: 42px;
+    font-weight: bold;
+    animation: titlePop 1.5s ease-out;
+  }
+  
+
+  .subtitle {
+    margin-top: 15px;
+    font-size: 20px;
+    animation: subtitleFade 2.5s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+
+  @keyframes titlePop {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* 🌿 Subtitle fade up */
+  @keyframes subtitleFade {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   
   .erabadu {
     position: absolute;
     top: 0;
     left: 0;
-    height: 40vh;   /* updated size */
+    height: 40vh;   
     width: auto;
     z-index: 1;
   }
@@ -128,4 +151,29 @@ body {
   @keyframes bounce {
     0%, 100% { transform: translateY(-50%); }
     50% { transform: translateY(-60%); }
+  }
+
+
+  .bottom-left-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 20;
+    font-family: "Noto Sans Sinhala", sans-serif;
+  
+    animation: fadeInText 2s ease-out;
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
