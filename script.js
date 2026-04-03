@@ -8,11 +8,32 @@ const list = [
     "images/img7.png",
     "images/img8.png",
     "images/img9.png",
-    "images/img10.png",
-    "images/img11.png",
-    "images/img12.png",
-    "images/img13.png",
+    "images/img10.png"
   ];
+  const container = document.getElementById("bottom-line");
+
+function renderImages() {
+  container.innerHTML = ""; 
+
+  list.forEach((src, index) => {
+    const img = document.createElement("img");
+
+    img.src = src;
+    img.className = "bottom-img";
+
+    img.style.animationDelay = index * 0.2 + "s";
+
+    container.appendChild(img);
+  });
+}
+
+renderImages();
+
+setInterval(() => {
+  renderImages();
+}, list.length * 200 + 2500);
+
+
   
 //   function sweets() {
 //     const h = document.createElement("img");
