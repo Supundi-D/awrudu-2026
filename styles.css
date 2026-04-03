@@ -92,7 +92,6 @@ body {
     }
   }
   
-  /* 🌿 Subtitle fade up */
   @keyframes subtitleFade {
     0% {
       transform: translateY(20px);

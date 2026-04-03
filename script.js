@@ -1,4 +1,3 @@
-// Add your image paths here
 const list = [
     "images/img1.png",
     "images/img2.png",
@@ -15,34 +14,34 @@ const list = [
     "images/img13.png",
   ];
   
-  function sweets() {
-    const h = document.createElement("img");
+//   function sweets() {
+//     const h = document.createElement("img");
   
     
-    h.src = list[Math.floor(Math.random() * list.length)];
-    h.className = "sweets";
+//     h.src = list[Math.floor(Math.random() * list.length)];
+//     h.className = "sweets";
   
     
-    h.style.left = Math.random() * 100 + "vw";
+//     h.style.left = Math.random() * 100 + "vw";
   
    
-    const size = Math.random() * 40 + 40;
-    h.style.width = size + "px";
+//     const size = Math.random() * 40 + 40;
+//     h.style.width = size + "px";
   
     
-    const duration = Math.random() * 3 + 4;
-    h.style.animationDuration = duration + "s";
+//     const duration = Math.random() * 3 + 4;
+//     h.style.animationDuration = duration + "s";
   
-    document.body.appendChild(h);
+//     document.body.appendChild(h);
   
    
-    setTimeout(() => {
-      h.remove();
-    }, duration * 1000);
-  }
+//     setTimeout(() => {
+//       h.remove();
+//     }, duration * 1000);
+//   }
   
   
-  setInterval(sweets, 800);
+//   setInterval(sweets, 800);
 
 
   const petalsImg = "images/erabadu_petals.png";
