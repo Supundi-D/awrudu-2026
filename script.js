@@ -6,9 +6,7 @@ const list = [
     "images/img5.png",
     "images/img6.png",
     "images/img7.png",
-    "images/img8.png",
-    "images/img9.png",
-    "images/img10.png"
+    "images/img8.png"
   ];
   const container = document.getElementById("bottom-line");
 
@@ -32,37 +30,6 @@ renderImages();
 setInterval(() => {
   renderImages();
 }, list.length * 200 + 2500);
-
-
-  
-//   function sweets() {
-//     const h = document.createElement("img");
-  
-    
-//     h.src = list[Math.floor(Math.random() * list.length)];
-//     h.className = "sweets";
-  
-    
-//     h.style.left = Math.random() * 100 + "vw";
-  
-   
-//     const size = Math.random() * 40 + 40;
-//     h.style.width = size + "px";
-  
-    
-//     const duration = Math.random() * 3 + 4;
-//     h.style.animationDuration = duration + "s";
-  
-//     document.body.appendChild(h);
-  
-   
-//     setTimeout(() => {
-//       h.remove();
-//     }, duration * 1000);
-//   }
-  
-  
-//   setInterval(sweets, 800);
 
 
   const petalsImg = "images/erabadu_petals.png";
